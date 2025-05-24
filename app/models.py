@@ -17,3 +17,10 @@ class Student(Base):
         CheckConstraint('grade BETWEEN 1 and 12',
                         name='grade_between_1_and_12')
     )
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(), index=True)
+    email = Column(String(55))
+    grade = Column(Integer())
+    birthday = Column(DateTime())
+    enrolled_date = Column(DateTime(), default=datetime.now())
