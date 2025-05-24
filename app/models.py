@@ -1,5 +1,5 @@
-from sqlachemy import create_engine
-from sqlachemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
 
 
 engine = create_engine('sqliteL//migrations_test.db')
